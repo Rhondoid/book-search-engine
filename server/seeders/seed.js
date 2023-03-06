@@ -5,10 +5,10 @@ const bookSeeds = require('./bookSeeds.json');
 
 db.once('open', async () => {
   try {
-    await Book.deleteMany({});
-    await User.deleteMany({});
+    // await Book.deleteMany({});
+    // await User.deleteMany({});
 
-    await User.create(userSeeds);
+    // await User.create(userSeeds);
 
     for (let i = 0; i < bookSeeds.length; i++) {
       const { _id, bookAuthor } = await Book.create(bookSeeds[i]);
