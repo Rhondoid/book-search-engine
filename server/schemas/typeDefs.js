@@ -5,11 +5,13 @@ const typeDefs = gql`
     _id: ID
     username: String!
     email: String!
-    password: String!
+    bookCount: Int
+    // password: String!
     savedBooks: [Book]
   }
 
   type Book {
+    //book id value returned from google's book API
     _id: ID!
     description: String!
     author: [String]
