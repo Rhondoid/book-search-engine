@@ -36,7 +36,7 @@ const resolvers = {
 
       return { token, user };
     },
-    addBook: async (parent, { _id,
+    create: async (parent, { _id,
       description,
       author,
       image,
